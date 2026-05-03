@@ -393,3 +393,13 @@ fun reto27() {
     println("Reto 27: Premios Vendedores")
     println("Promedio: $promedio, Premiados: $premiados")
 }
+
+// Ejercicio 28 - Calculadora de Tarifas de Parking
+fun reto28() {
+    val tarifas = (1..10).associateWith { it * 2500.0 }
+    val horas = 8
+    val costo = tarifas[horas] ?: (horas * 2500.0)
+
+    println("Reto 28: Parking")
+    println("Costo por $horas horas: $costo")
+}
