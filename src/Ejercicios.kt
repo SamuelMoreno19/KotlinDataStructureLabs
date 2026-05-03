@@ -197,3 +197,12 @@ fun reto15() {
     println("Reto 15: IVA Selectivo")
     println("Precios con IVA: $conIVA")
 }
+
+// Ejercicio 16 - Mantenimiento de Sensores
+fun reto16() {
+    val sensores = mutableListOf(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+    sensores.removeAll { it % 4 == 0 }
+
+    println("Reto 16: Mantenimiento de Sensores")
+    println("Sensores funcionales: $sensores")
+}
