@@ -361,3 +361,25 @@ fun reto25() {
     println("Reto 25: Rendimiento Maratón")
     println("Promedio sin outliers: $promedioReal")
 }
+
+// Ejercicio 26 - Compresión de Logs
+fun reto26() {
+    val logs = listOf("ACTIVE", "ACTIVE", "ACTIVE", "INACTIVE", "ACTIVE", "INACTIVE", "INACTIVE")
+    val comprimido = mutableListOf<Pair<String, Int>>()
+    if (logs.isNotEmpty()) {
+        var actual = logs[0]
+        var cuenta = 0
+        for (log in logs) {
+            if (log == actual) {
+                cuenta++
+            } else {
+                comprimido.add(actual to cuenta)
+                actual = log
+                cuenta = 1
+            }
+        }
+        comprimido.add(actual to cuenta)
+    }
+    println("Reto 26: Compresión Logs")
+    println("Resumen: $comprimido")
+}
