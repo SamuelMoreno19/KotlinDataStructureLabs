@@ -20,7 +20,7 @@ fun reto1() {
 
 // Ejercicio 2 - El filtro de empleados senior
 fun reto2() {
-    val empleados = listOf("Andres" to 25, "Sebastian" to 35, "Liliana" to 42, "Samuel" to 28, "Karen" to 31)
+    val empleados = listOf("Andres" to 22, "Sebastian" to 38, "Liliana" to 41, "Samuel" to 20, "Karen" to 35)
     val seniorNames = empleados
         .filter { it.second > 30 }
         .map { it.first.uppercase() }
@@ -36,4 +36,17 @@ fun reto3() {
 
     println("Ejercicio 3: Limpiar la agenda")
     println("Contactos únicos ordenados: $unicos")
+}
+
+
+// Ejercicio 4 - Análisis de Carrito de Compras
+fun reto4() {
+    val carrito = listOf("Galletas", "Pan tajado", "Galletas", "Quesito", "Pan tajado", "Galletas", "Leche")
+    val conteo = mutableMapOf<String, Int>()
+    for (producto in carrito) {
+        conteo[producto] = conteo.getOrDefault(producto, 0) + 1
+    }
+
+    println("Reto 4: El Carrito de Compras")
+    println("Conteo: $conteo")
 }
