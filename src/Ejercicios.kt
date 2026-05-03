@@ -123,3 +123,17 @@ fun reto9() {
         println("El código [$codigo] pertenece a [$nombre]")
     }
 }
+
+// Ejercicio 10 - Rotación de Turnos de Trabajo
+fun reto10() {
+    val empleados = listOf("Emp4", "Emp7", "Emp1", "Emp5", "Emp2", "Emp6", "Emp3")
+    val k = 4
+    val rotada = mutableListOf<String>()
+    for (i in empleados.indices) {
+        rotada.add(empleados[(i + k) % empleados.size])
+    }
+
+    println("Reto 10: Rotación de Turnos")
+    println("Original: $empleados")
+    println("Rotada (k=$k): $rotada")
+}
