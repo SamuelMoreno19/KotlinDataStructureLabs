@@ -239,3 +239,20 @@ fun reto18() {
     println("Reto 18: Fusión de Recetas")
     println("Lista de compras: $compras")
 }
+
+// Ejercicio 19 - Ranking de Apps por Calificación
+fun reto19() {
+    val apps = mutableListOf("VideoPro" to 4.7, "GameMaster" to 3.5, "QuickNotes" to 4.1, "CloudRun" to 4.8)
+    for (i in 0 until apps.size - 1) {
+        for (j in 0 until apps.size - 1 - i) {
+            if (apps[j].second < apps[j + 1].second) {
+                val temp = apps[j]
+                apps[j] = apps[j + 1]
+                apps[j + 1] = temp
+            }
+        }
+    }
+
+    println("Reto 19: Ranking de Apps")
+    println("Top Apps: $apps")
+}
