@@ -330,3 +330,22 @@ fun reto23() {
     println("Reto 23: Seguimiento Dieta")
     println("Diferencias vs Promedio Anterior: $diferencias")
 }
+
+// Ejercicio 24 - Organización de Contenedores
+fun reto24() {
+    val manifiesto = "((()())())"
+    var balance = 0
+    var esValido = true
+    for (char in manifiesto) {
+        if (char == '(') balance++
+        else if (char == ')') balance--
+        if (balance < 0) {
+            esValido = false
+            break
+        }
+    }
+    if (balance != 0) esValido = false
+
+    println("Reto 24: Contenedores Balanceados")
+    println("Manifiesto: $manifiesto - ¿Válido?: $esValido")
+}
