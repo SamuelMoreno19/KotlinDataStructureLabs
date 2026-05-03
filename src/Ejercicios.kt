@@ -63,3 +63,16 @@ fun reto5() {
     println("Original: ${historial.joinToString()}")
     println("Invertido: ${invertido.joinToString()}")
 }
+
+// Ejercicio 6 - Compatibilidad de Intereses (Match)
+fun reto6() {
+    val interesesP1 = setOf("Futbol", "Música", "Paseos", "Juegos")
+    val interesesP2 = setOf("Música", "Natacion", "Viajes", "Pintar")
+
+    val comunes = interesesP1.intersect(interesesP2)
+    val exclusivosP1 = interesesP1.subtract(interesesP2)
+
+    println("Reto 6: El Match de Intereses")
+    println("Comunes: $comunes")
+    println("Solo Persona 1: $exclusivosP1")
+}
