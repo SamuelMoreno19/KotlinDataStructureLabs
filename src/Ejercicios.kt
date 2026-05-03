@@ -50,3 +50,16 @@ fun reto4() {
     println("Reto 4: El Carrito de Compras")
     println("Conteo: $conteo")
 }
+
+// Ejercicio 5 - Historial de Navegación Reversible
+fun reto5() {
+    val historial = arrayOf("firebase.com", "github.com", "androidstudio.org", "stackoverflow.com", "nextjs.com")
+    val invertido = arrayOfNulls<String>(historial.size)
+    for (i in historial.indices) {
+        invertido[i] = historial[historial.size - 1 - i]
+    }
+
+    println("Reto 5: El Historial Reversible")
+    println("Original: ${historial.joinToString()}")
+    println("Invertido: ${invertido.joinToString()}")
+}
