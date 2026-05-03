@@ -423,3 +423,26 @@ fun reto29() {
     println("Reto 29: Parejas de Carga")
     println("Para target $target, pareja encontrada: $pareja")
 }
+
+// Ejercicio 30 - Espejo de Layout de Tienda
+fun reto30() {
+    val layout = arrayOf(
+        arrayOf("N1", "N2"),
+        arrayOf("S1", "S2"),
+        arrayOf("E1", "E2")
+    )
+    val filas = layout.size
+    val cols = layout[0].size
+    val transpuesto = Array(cols) { Array(filas) { "" } }
+
+    for (i in 0 until filas) {
+        for (j in 0 until cols) {
+            transpuesto[j][i] = layout[i][j]
+        }
+    }
+
+    println("Reto 30: Layout Transpuesto")
+    for (fila in transpuesto) {
+        println(fila.joinToString(" | "))
+    }
+}
