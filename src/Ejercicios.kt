@@ -206,3 +206,23 @@ fun reto16() {
     println("Reto 16: Mantenimiento de Sensores")
     println("Sensores funcionales: $sensores")
 }
+
+// Ejercicio 17 - Mapa de Almacén (Matriz)
+fun reto17() {
+    val almacen = arrayOf(
+        arrayOf(30, 12, 8, 4),
+        arrayOf(9, 22, 11, 7),
+        arrayOf(15, 6, 18, 2),
+        arrayOf(5, 14, 3, 40)
+    )
+    var principal = 0
+    var secundaria = 0
+    val n = almacen.size
+    for (i in 0 until n) {
+        principal += almacen[i][i]
+        secundaria += almacen[i][n - 1 - i]
+    }
+
+    println("Reto 17: Matriz Almacén")
+    println("Suma Principal: $principal, Suma Secundaria: $secundaria")
+}
