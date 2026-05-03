@@ -20,7 +20,7 @@ fun reto1() {
 
 // Ejercicio 2 - El filtro de empleados senior
 fun reto2() {
-    val empleados = listOf("Ana" to 25, "Carlos" to 35, "Beatriz" to 42, "David" to 28, "Elena" to 31)
+    val empleados = listOf("Andres" to 25, "Sebastian" to 35, "Liliana" to 42, "Samuel" to 28, "Karen" to 31)
     val seniorNames = empleados
         .filter { it.second > 30 }
         .map { it.first.uppercase() }
@@ -29,3 +29,11 @@ fun reto2() {
     println("Empleados Senior: $seniorNames")
 }
 
+// Ejercicio 3 - Limpieza de Contactos Duplicados
+fun reto3() {
+    val contactos = listOf("300498", "387496", "351749", "373598", "351098", "374888", "309875")
+    val unicos = contactos.toSet().sorted()
+
+    println("Ejercicio 3: Limpiar la agenda")
+    println("Contactos únicos ordenados: $unicos")
+}
