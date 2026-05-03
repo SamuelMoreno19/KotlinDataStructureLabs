@@ -279,3 +279,20 @@ fun reto20() {
     println("Reto 20: Unión Agendas")
     println("Agenda Fusionada: $fusion")
 }
+
+// Ejercicio 21 - Días de Mantenimiento (Primos)
+fun reto21() {
+    val n = 80
+    val esPrimo = BooleanArray(n + 1) { true }
+    esPrimo[0] = false
+    esPrimo[1] = false
+    for (p in 2..Math.sqrt(n.toDouble()).toInt()) {
+        if (esPrimo[p]) {
+            for (i in p * p..n step p) esPrimo[i] = false
+        }
+    }
+    val pisosPrimos = (1..n).filter { esPrimo[it] }
+
+    println("Reto 21: Pisos Primos")
+    println("Pisos con mantenimiento: $pisosPrimos")
+}
