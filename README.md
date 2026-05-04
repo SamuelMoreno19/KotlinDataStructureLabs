@@ -15,7 +15,7 @@ Para resolver estos ejercicios, utilicé varias herramientas clave del lenguaje:
 *   **Matrices:** Trabajé con arreglos bidimensionales para simular el orden de un almacén o mover posiciones en un mapa.
 *   **Algoritmos Varios:** Implementé desde cálculos de promedios y filtros de precios, hasta lógica de números primos y balanceo de paréntesis.
 
-### 🛠️ Cómo probar los ejercicios
+###  Cómo probar los ejercicios
 El código está estructurado en funciones independientes llamadas `reto1()`, `reto2()`, etc. Para verlos en acción:
 1. Abre el proyecto en **IntelliJ IDEA**.
 2. Ve al archivo `Main.kt`.
@@ -24,7 +24,7 @@ El código está estructurado en funciones independientes llamadas `reto1()`, `r
 
 ---
 
-### 🎥 Sustentación en Video
+###  Sustentación en Video
 Elegí uno de los retos para explicarlo a fondo, mostrando tanto el razonamiento lógico como el código funcionando:
 
 *   **Enlace al video (Loom):** https://www.loom.com/share/02ad5aa526ed4c299494a49d0f5c0314
